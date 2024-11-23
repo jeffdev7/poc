@@ -1,0 +1,326 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ebe2c5; /* Light gray background for contrast */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; /* Adjust as needed */
+    background-color: #ebe2c5;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Styling */
+  .navbar-title {
+      position: absolute; /* Place title absolutely relative to navbar */
+      left: 50%; /* Start from center */
+      transform: translateX(-50%); /* Center align horizontally */
+    }
+    
+    .navbar-title h1 {
+      margin: 0; /* Remove default margin */
+      font-size: 1.5rem; /* Adjust title size */
+      font-weight: bold; /* Bold title */
+      color: #635d5d; /* White text */
+    }
+    
+  
+  .navbar-logo .logo {
+    height: 100%; /* Ensure logo fits within navbar */
+    max-height: 50px; /* Set maximum height for the logo */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Hero Section Styling */
+  .hero {
+    position: relative;}
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 80px; /* Adjust for navbar height */
+    position: relative;
+  }
+  
+  .text-section {
+      padding: 40px 0; /* Add padding around the section */
+      background-color: #ebe2c5;
+  }
+    
+    /* Styling for h3 tags */
+    .text-section h3 {
+      font-size: 2rem; /* Larger font size for the heading */
+      font-weight: bold; /* Bold text */
+      color: #333; /* Dark text color */
+      margin-bottom: 10px; /* Space below the heading */
+  }
+  .responsive-title {
+      font-weight: bold; /* Bold text */
+      color: #333; /* Dark text color */
+      margin-bottom: 10px; /* Space below the heading */
+    }
+    
+    @media (min-width: 576px) {
+      .responsive-title {
+        font-size: 2rem; /* Smaller devices */
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .responsive-title {
+        font-size: 2.5rem; /* Medium devices (Tablets) */
+      }
+    }
+    
+    @media (min-width: 992px) {
+      .responsive-title {
+        font-size: 3rem; /* Larger devices (Desktops) */
+      }
+    }
+    
+    @media (min-width: 1200px) {
+      .responsive-title {
+        font-size: 3.5rem; /* Very large screens */
+      }
+    }
+  
+  /* Card Container */
+  .card-container {
+      margin-bottom: 20px; /* Space below each card */
+  
+  }
+  .card-container .col-md-6 {
+      margin-bottom: 20px; /* Space between cards */
+    }
+    @media (max-width: 768px) {
+      .card-container .col-md-6 {
+        margin-bottom: 15px; /* Reduce space on smaller screens */
+      }
+    }
+  /* Card Styling */
+  .card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures child elements stay within rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    width: 18rem; /* Maintain fixed width */
+  }
+  
+  /* Image Styling */
+  .card-img-top {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fits nicely in the card */
+  }
+  
+  /* Body Styling */
+  .card-body {
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center text for better alignment */
+  }
+  
+  /* Title Styling */
+  .card-title {
+    font-size: 1.25rem; /* Slightly larger font size */
+    font-weight: bold; /* Bold title */
+    margin-bottom: 10px; /* Space below title */
+    color: #333; /* Darker text for better readability */
+  }
+  
+  /* Text Styling */
+  .card-text {
+    font-size: 0.9rem; /* Slightly smaller font */
+    color: #555; /* Medium gray text */
+    margin-bottom: 20px; /* Space below paragraph */
+    line-height: 1.5; /* Better readability */
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding for button size */
+    border-radius: 4px; /* Rounded button edges */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth color change on hover */
+  }
+  
+  /* Hover Effects */
+  .card:hover {
+    transform: translateY(-5px); /* Lift card slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  /* Footer Section Styling */
+  .footer {
+      background-color: #343a40; /* Dark background color */
+      color: #ffffff; /* White text color */
+      padding: 20px 0; /* Padding around the footer */
+      position: relative; /* Allow for positioning adjustments */
+      bottom: 0; /* Ensure it stays at the bottom of the page */
+      width: 100%; /* Full width */
+    }
+    
+    .footer p {
+      margin: 0; /* Remove any default margin */
+      font-size: 14px; /* Set font size */
+    }
+    
+    /* Ensures the footer doesn't overlap with content */
+    body, html {
+      min-height: 100%;
+      margin: 0;
+    }
+    
+    .footer {
+      position: relative;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      padding: 40px 0;
+      background-color: #ebdeb6;
+      color: rgb(12, 12, 12);
+    }
+    
+    @media (max-width: 768px) {
+      .footer p {
+        font-size: 12px; /* Smaller font size on small devices */
+      }
+    }
+  
+  /* General Form Styles */
+  .center-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  #form-checkout {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-top: 100px; /* Optional: Adjust space between header and form */
+  }
+  @media (max-width: 768px) {
+    #form-checkout {
+      max-width: 90%; /* Allows the form to shrink to 90% of the screen width on smaller screens */
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #form-checkout {
+      max-width: 95%; /* Further reduce max-width for very small screens */
+      padding: 10px; /* Reduce padding even more */
+    }
+  }
+  
+  /* Form Section */
+  .form-section {
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Placeholder Styling */
+  .form-group input::placeholder {
+    color: #999;
+    font-size: 12px;
+  }
+  
+  /* Form Footer */
+  .form-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #45a049;
+  }
+  
+  .payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures it takes the full height of the screen */
+  }
+  
+  .payment-card {
+    width: 100%;
+    max-width: 500px; /* Controls the maximum width of the card */
+    margin: 0 auto; /* Centers the card horizontally */
+  }
+  
+  .payment-card-header {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .payment-card-body {
+    padding: 20px;
+  }
+  
+  .code-row {
+    display: flex;
+    justify-content: center;
+  }
+  
