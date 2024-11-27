@@ -24,6 +24,7 @@ if (!isset($dados)) {
 $produto = htmlspecialchars($dados['produto']);
 $valor = htmlspecialchars($dados['valor']);
 $qr_code_base64 = $dados['qr_code_base64'];
+$qr_code = $dados['qr_code'];
 ?>
 
 <div class="payment-container pt-3">
@@ -38,6 +39,7 @@ $qr_code_base64 = $dados['qr_code_base64'];
                 <div class="code-row d-flex justify-content-center">
                     <img src="data:image/jpeg;base64,<?php echo $qr_code_base64 ?>" alt="QRCode" style="width: 300px;">
                 </div>
+                <p><strong>Chave: </strong><?php echo $qr_code; ?></p>
             </div>
         </div>
 </div>

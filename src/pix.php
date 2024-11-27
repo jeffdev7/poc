@@ -26,7 +26,7 @@ $test = $_POST['price'];
     "payer" => [
         "entity_type" => "individual",
         "type" => "customer",
-        "email" => "jago@jagosolutions.com",// $_POST['email'],
+        "email" => "jago@jagosolutions.com",
         "identification" => [
             "type" =>  "CPF",
             "number" => "95749019047"
@@ -50,10 +50,8 @@ try{
 // var_dump($payment->point_of_interaction->transaction_data->qr_code);
 // var_dump($payment->id);
 
-
-
 $dados = [
-    'qr_code_base64' => $payment->point_of_interaction->transaction_data->qr_code_base64,
+    'qr_code_base64' => $payment->point_of_interaction->transaction_data->qr_code_base64 ?? 'Not Available',
     'qr_code' => $payment->point_of_interaction->transaction_data->qr_code,
     'payment_id' => $payment->id,
     'valor' => $preise,

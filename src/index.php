@@ -8,20 +8,16 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="logo-jago.ico">
   <title>Wedding List</title>
 </head>
 
 <body>
 
   <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="navbar-logo">
-      <img src="logo-jago.ico" alt="Logo" class="logo">
-    </div>
-    <div class="navbar-title">
-      <h1>Goku & ChiChi</h1>
-    </div>
-  </nav>
+  <?php
+    include_once './header.php'
+?>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -63,7 +59,7 @@
           <div class="card-body">
             <h5 class="card-title">Casa</h5>
             <p class="card-text">Colabore conosco para as compras do mês e mobilia.</p>
-            <a href="soon.php" class="btn btn-primary">Contribute</a>
+            <a href="payment.php" class="btn btn-primary">Contribute</a>
           </div>
         </div>
       </div>
@@ -74,7 +70,7 @@
           <div class="card-body">
             <h5 class="card-title">Streaming & serviços</h5>
             <p class="card-text">Colabore conosco para serviços de stream e Gympass.</p>
-            <a href="soon.php" class="btn btn-primary">Contribute</a>
+            <a href="payment.php" class="btn btn-primary">Contribute</a>
           </div>
         </div>
       </div>
@@ -83,11 +79,9 @@
 </section>
 
 <!-- Footer Section -->
-<footer class="footer">
-  <div class="container text-center">
-    <p>&copy; 2024 JaGo Desenvolvimento Ltda. All rights reserved.</p>
-  </div>
-</footer>
+<?php
+    include_once './footer.php'
+?>
 
 </body>
 

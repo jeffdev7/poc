@@ -7,14 +7,16 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="logo-jago.ico">
+
   <title>Form Checkout</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="center-form">
 
 <?php
     include_once './header.php'
 ?>
+
   <form id="form-checkout" action="pix.php" method="post">
     <div class="form-section">
     <div class="form-group">
@@ -33,8 +35,8 @@
       <!-- <div class="form-group">
         <label for="form-checkout__email">E-mail</label>
         <input id="form-checkout__email" name="email" type="email" placeholder="Digite seu e-mail" required>
-      </div>
-      <div class="form-group">
+      </div> -->
+      <!-- <div class="form-group">
         <label for="form-checkout__identificationType">Tipo de documento</label>
         <select id="form-checkout__identificationType" name="identificationType" required>
           <option value="" disabled selected>Selecione</option>
@@ -55,5 +57,9 @@
     </div>
   </form>
 
+  <!-- Footer Section -->
+
+
+<?php include_once './footer.php'?>
 </body>
 </html>
